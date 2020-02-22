@@ -1,3 +1,15 @@
+%{
+t1=Starting temperature 
+t2=ending temperature
+diff=increments
+ref is char vaule of refrigerant name
+example,
+ref=['r32']
+to execute the function 
+TT=datamesh(-25,25,1,'r32');
+%}
+
+
 function TT=datamesh(t1,t2,diff,ref)
 
 T1=273+t1;
